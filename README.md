@@ -49,4 +49,4 @@ Replace `"#"` with the listing, for example `https://apps.apple.com/app/id123456
 
 ## Type
 
-Literata and Barlow Condensed are self-hosted (latin) under the SIL Open Font License. See `assets/fonts/OFL.txt`.
+Barlow Condensed and Outfit are self-hosted (latin) under the SIL Open Font License. See `assets/fonts/OFL.txt`.
