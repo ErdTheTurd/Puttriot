@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Puttriot — a practice tool that reads greens</title>
+  <meta name="description" content="Puttriot is an iPhone practice tool. It looks at a putting green and draws the break, an aim point, and a pace from the slope and the stimp.">
+  <meta name="theme-color" content="#f3efe4">
+  <meta property="og:title" content="Puttriot">
+  <meta property="og:description" content="An iPhone practice tool that reads putting greens.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../assets/icon-512.png">
+  <link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-head nav">
+    <div class="wrap head-row">
+      <div>
+        <a class="mark" href="../home/">
+          <img src="../assets/icon.svg" width="34" height="34" alt="">
+          Puttriot
+        </a>
+        <p class="edition">Practice tool · iPhone · Made in the U.S.A.</p>
+      </div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel">
+        <span class="nav-toggle-label">Menu</span>
+      </button>
+      <ul class="nav-links" id="nav-panel">
+        <li><a href="../home/" aria-current="page">Home</a></li>
+        <li><a href="../support/">Support</a></li>
+        <li><a href="../privacy-policy/">Privacy policy</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <article class="wrap">
+      <h1>A phone that reads the putt.</h1>
+      <p class="deck">Puttriot is a practice tool for the iPhone. You show it a green. It looks at the slope and draws where the ball can go.</p>
+
+      <div class="lead">
+        <div class="prose">
+          <p>Most putts are misread in the same dull way. The green looks flat from a standing height, the mower stripe pulls your eye, and you start the ball at the hole. Then it peels off and finishes two feet low. You knew there was something in it. You could not see the amount.</p>
+          <p>The app is for that putt, on a real green, before you hit it. You walk the line with the phone. On a Pro iPhone the LiDAR scanner and ARKit rebuild the surface. On any other iPhone the camera does the reading. You get a line from the ball to the hole, an aim point off to the side, contour bands on the slope, and a pace. Then you putt. The phone does not hit it for you.</p>
+          <p>It is not in the App Store yet. The button below is the one we will point at the listing. Until that listing exists, the button stays on this page and says so.</p>
+          <a class="store" data-store-link href="#">
+            <svg class="apple" viewBox="0 0 18 22" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M14.94 11.37c.02-2.27 1.85-3.36 1.94-3.41-1.06-1.55-2.7-1.76-3.28-1.79-1.4-.14-2.73.82-3.44.82-.71 0-1.8-.8-2.96-.78-1.52.02-2.93.89-3.71 2.25-1.58 2.75-.4 6.81 1.14 9.04.75 1.09 1.65 2.31 2.83 2.27 1.13-.05 1.56-.73 2.93-.73 1.37 0 1.75.73 2.95.71 1.22-.02 1.99-1.11 2.74-2.2.86-1.26 1.22-2.48 1.24-2.54-.03-.01-2.38-.91-2.4-3.62zM12.7 4.9c.63-.76 1.05-1.82.94-2.88-1.01.04-2.23.67-2.95 1.52-.65.75-1.21 1.94-1.06 3.09 1.12.09 2.27-.57 3.07-1.73z"/>
+            </svg>
+            <span class="store-copy">
+              <span class="store-kicker">Download on the</span>
+              <span class="store-name">App Store</span>
+            </span>
+          </a>
+        </div>
+
+        <figure class="plate">
+          <svg viewBox="0 0 340 300" role="img" aria-labelledby="fig1-title">
+            <title id="fig1-title">Diagram of a putt that breaks to the right</title>
+            <rect width="340" height="300" fill="#c6d67a"/>
+            <g fill="none" stroke="#5d822e" stroke-linecap="round">
+              <ellipse cx="188" cy="156" rx="62" ry="36" stroke-width="11"/>
+              <ellipse cx="196" cy="164" rx="112" ry="68" stroke-width="14"/>
+              <ellipse cx="176" cy="172" rx="168" ry="104" stroke-width="16"/>
+            </g>
+            <path d="M78 236 C 58 170, 118 112, 228 78" fill="none" stroke="#1c2740" stroke-width="2.4" stroke-linecap="round"/>
+            <circle cx="86" cy="168" r="6" fill="none" stroke="#8d2e2a" stroke-width="1.6"/>
+            <circle cx="86" cy="168" r="2" fill="#8d2e2a"/>
+            <circle cx="232" cy="76" r="9" fill="#1c2740"/>
+            <circle cx="78" cy="236" r="7" fill="#f3efe4" stroke="#1c1914" stroke-width="1.2"/>
+            <g fill="#1c1914" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="15" letter-spacing="0.4">
+              <text x="96" y="172">aim</text>
+              <text x="246" y="80">hole</text>
+              <text x="90" y="248">ball</text>
+            </g>
+          </svg>
+          <figcaption><strong>Figure 1.</strong> Breaks right. Start the ball at the aim point, left of the hole, and let it fall back.</figcaption>
+        </figure>
+      </div>
+
+      <div class="prose">
+        <h2>What you are looking at</h2>
+        <p>A read has four parts. They are ordinary golf words. The phone is there to put a number and a picture on them, not to invent a new language for putting.</p>
+        <dl class="defs">
+          <div>
+            <dt>The line</dt>
+            <dd>The path from the ball to the hole. On a sloping green it is a curve, not a string pulled tight.</dd>
+          </div>
+          <div>
+            <dt>The aim point</dt>
+            <dd>Where you start the ball. If the putt breaks right, the aim point is left of the hole. The ball takes the break from there.</dd>
+          </div>
+          <div>
+            <dt>The contours</dt>
+            <dd>Bands drawn on the slope, the same family of line as the mark on this site. They are there so the tilt has a shape you can see, not just a feeling in your feet.</dd>
+          </div>
+          <div>
+            <dt>The pace</dt>
+            <dd>How hard to roll it. Die it in the hole, or give it more. The suggestion uses the length, the slope, and the stimp you entered.</dd>
+          </div>
+        </dl>
+
+        <h2>A worked example</h2>
+        <p>Say the putt is fourteen feet, a touch uphill, and it breaks about eight inches to the right. You would start the ball about a cup outside the left edge and try to die it at the hole. If you told the app the green was a 10 on the stimp, and the scan put the slope near a percent and a half, that is the shape of the answer you should expect.</p>
+        <p>Those numbers are an illustration, so you can see what a read is made of. On your green the length might be paced, the slope comes from the scan, and the stimp is whatever you typed. The app marks a figure as a model when it is not a tape measure and not a stimp you actually rolled out. A model is something to stand over and test. It is not a fact you can take into a rules dispute.</p>
+        <p>Green speed matters more than people admit on a short putt. A ten-foot putt on a slow municipal green and the same ten-footer on a twelve-stimp practice green do not take the same break, because the ball is not on the slope for the same amount of time. Faster green, more break, softer hands. If you do not know the stimp, do not invent a precise one and then believe the pace. Pick a round number you can live with, and treat the pace as a model.</p>
+
+        <h2>How a scan goes</h2>
+        <p>You are standing at the ball, or just behind it, with the hole in frame. You move along the putt so the phone can see the ground between the two. This is not a photograph of the green from the clubhouse. It is a short walk.</p>
+        <ol>
+          <li>Frame the putt. Ball, hole, and the ground between them.</li>
+          <li>Walk it. On a Pro iPhone, LiDAR and ARKit rebuild the surface. On other iPhones, the camera does that job and the app says so.</li>
+          <li>Mark the ball and the hole if the app asks. There is no clip-on sensor and no special ball.</li>
+          <li>Read it. Line, aim point, contours, pace. Then put the phone down and hit the putt you mean to hit.</li>
+        </ol>
+        <p>Daylight helps. A low sun in the lens, a green in deep shade, or a lens with rain on it will make a worse surface. If the read looks nonsense, scan it again before you decide the green is haunted. The <a href="../support/">support page</a> goes through the failures we already expect: bad light, a scan that never settles, a break that feels backwards, a stimp you do not know.</p>
+
+        <h2>Which iPhones</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Phone</th><th>How it sees the green</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>iPhone 12 Pro, 12 Pro Max, and later Pro and Pro Max models</td>
+                <td>LiDAR scanner, with ARKit scene reconstruction. This is the full read.</td>
+              </tr>
+              <tr>
+                <td>Other recent iPhones</td>
+                <td>The camera. You still get a line. It is a different sensor, and the app is plain about that.</td>
+              </tr>
+              <tr>
+                <td>iPad, Android</td>
+                <td>Not what this is built for.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">“Later Pro models” means the Pro and Pro Max phones that kept the LiDAR scanner after the 12 Pro. If a future iPhone Pro drops that scanner, it belongs in the camera row.</p>
+
+        <h2>Practice, not a ruling</h2>
+        <p>Use it on the practice green. Use it while you are learning a course, if you are allowed a phone in your hand that day. During a stipulated round, the rules on distance-measuring devices are yours to know. A lot of competitions do not want a phone telling you the break. We will not wink at that.</p>
+        <p>Juniors can use it. A parent can hand over a phone on the practice green behind the clubhouse. There is no account to make, and we do not ask for a child’s name. The <a href="../privacy-policy/">privacy policy</a> says what this website keeps, which is almost nothing, and what the app is being built to keep on the phone.</p>
+
+        <h2>The name</h2>
+        <p>Puttriot is putt and patriot pushed together. We are building it in the United States. The icon is a flag on a short pole, stuck in the hole, with the contour lines of a green around it. That is the product: the cup, and the slope under the ball. The red, white, and navy on this site are the same colors as that flag. They are in the rules and the mark, not painted across the background.</p>
+        <p>If you want the long version of how a scan fails, which phones have the scanner, and what to do when the pace feels wrong, it is on <a href="../support/">Support</a>.</p>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-row">
+        <p>© <span id="year">2026</span> Puttriot. Made in the U.S.A.</p>
+        <ul class="foot-links">
+          <li><a href="../home/" aria-current="page">Home</a></li>
+          <li><a href="../support/">Support</a></li>
+          <li><a href="../privacy-policy/">Privacy policy</a></li>
+          <li><a data-store-link href="#">App Store</a></li>
+        </ul>
+      </div>
+      <p class="fine">A practice aid. Look at the putt yourself before you hit it.</p>
+    </div>
+  </footer>
+  <div class="toast" role="status" aria-live="polite" hidden></div>
+  <script src="../js/config.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
