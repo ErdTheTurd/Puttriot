@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — Puttriot</title>
+  <meta name="description" content="How Puttriot reads a green: phones, scans, aim points, stimp, bad light, and what to do when the line looks wrong.">
+  <meta name="theme-color" content="#f3efe4">
+  <link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-head nav">
+    <div class="wrap head-row">
+      <div>
+        <a class="mark" href="../home/">
+          <img src="../assets/icon.svg" width="34" height="34" alt="">
+          Puttriot
+        </a>
+        <p class="edition">Support</p>
+      </div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel">
+        <span class="nav-toggle-label">Menu</span>
+      </button>
+      <ul class="nav-links" id="nav-panel">
+        <li><a href="../home/">Home</a></li>
+        <li><a href="../support/" aria-current="page">Support</a></li>
+        <li><a href="../privacy-policy/">Privacy policy</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main" class="wrap doc" tabindex="-1">
+    <nav class="toc" aria-label="On this page">
+      <p>On this page</p>
+      <ol>
+        <li><a href="#not-out">Not out yet</a></li>
+        <li><a href="#phones">Phones</a></li>
+        <li><a href="#before">Before a scan</a></li>
+        <li><a href="#walk">Walking the putt</a></li>
+        <li><a href="#markers">Ball and hole</a></li>
+        <li><a href="#sensors">Two sensors</a></li>
+        <li><a href="#line">The line</a></li>
+        <li><a href="#aim">The aim point</a></li>
+        <li><a href="#contours">Contours</a></li>
+        <li><a href="#pace">Pace and stimp</a></li>
+        <li><a href="#model">What “model” means</a></li>
+        <li><a href="#conditions">Light and weather</a></li>
+        <li><a href="#bad">When the read is junk</a></li>
+        <li><a href="#history">Practice history</a></li>
+        <li><a href="#juniors">Juniors</a></li>
+        <li><a href="#rules">Competition</a></li>
+        <li><a href="#wont">What it will not do</a></li>
+        <li><a href="#care">Phone care</a></li>
+        <li><a href="#site">This website</a></li>
+        <li><a href="#write">Writing to us</a></li>
+      </ol>
+    </nav>
+
+    <article class="prose">
+      <h1>Support</h1>
+      <p class="deck">How a read is supposed to work, and what to check when it does not.</p>
+
+      <h2 id="not-out">The app is not out yet</h2>
+      <p>Puttriot is in progress. There is no public build to install today. The App Store button on <a href="../home/">the home page</a> is the link we will use when the listing exists. Until then it stays on this website and tells you the listing is not up.</p>
+      <p>This page is the manual we are writing alongside the app, so the behavior is described before you are standing on a green with a phone and a tee time. If a shipped version disagrees with a sentence here, the app is the thing in your hand and this page gets corrected. We would rather fix a sentence than leave you with a confident wrong one.</p>
+      <a class="store" data-store-link href="#">
+        <svg class="apple" viewBox="0 0 18 22" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M14.94 11.37c.02-2.27 1.85-3.36 1.94-3.41-1.06-1.55-2.7-1.76-3.28-1.79-1.4-.14-2.73.82-3.44.82-.71 0-1.8-.8-2.96-.78-1.52.02-2.93.89-3.71 2.25-1.58 2.75-.4 6.81 1.14 9.04.75 1.09 1.65 2.31 2.83 2.27 1.13-.05 1.56-.73 2.93-.73 1.37 0 1.75.73 2.95.71 1.22-.02 1.99-1.11 2.74-2.2.86-1.26 1.22-2.48 1.24-2.54-.03-.01-2.38-.91-2.4-3.62zM12.7 4.9c.63-.76 1.05-1.82.94-2.88-1.01.04-2.23.67-2.95 1.52-.65.75-1.21 1.94-1.06 3.09 1.12.09 2.27-.57 3.07-1.73z"/>
+        </svg>
+        <span class="store-copy">
+          <span class="store-kicker">Download on the</span>
+          <span class="store-name">App Store</span>
+        </span>
+      </a>
+
+      <h2 id="phones">Which phone you need</h2>
+      <p>Puttriot is an iPhone app. Two groups of phones are supported, and they do not see the ground the same way.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>You have</th><th>You get</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>iPhone 12 Pro or 12 Pro Max, 13 Pro or 13 Pro Max, 14 Pro or 14 Pro Max, 15 Pro or 15 Pro Max, 16 Pro or 16 Pro Max, and later Pro or Pro Max models that still include a LiDAR scanner</td>
+              <td>A surface built with the LiDAR scanner and ARKit scene reconstruction. This is the reading we design around.</td>
+            </tr>
+            <tr>
+              <td>Another recent iPhone, including the non-Pro models and anything older than the 12 Pro</td>
+              <td>A camera read. Useful. Not the same measurement. The app should say “camera” on that read so you do not treat it as LiDAR.</td>
+            </tr>
+            <tr>
+              <td>iPad</td>
+              <td>Not a target. A big screen is nice and the wrong shape for walking a putt one-handed.</td>
+            </tr>
+            <tr>
+              <td>Android</td>
+              <td>No. There is no Android version planned on this page.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>You do not need the newest Pro to get LiDAR. A 12 Pro still has the scanner. You do need a phone that can run a current iOS. When the app ships, the App Store listing will show the minimum iOS version. If your phone cannot install it, that listing is the authority, not this paragraph.</p>
+      <p>Storage is ordinary for a small utility: the app itself, plus the practice putts you choose to keep. A scan of one green is not a video you are meant to store. If a phone is already full of photos, clear some room before you blame the reader.</p>
+
+      <h2 id="before">Before you scan</h2>
+      <p>Pick a putt you can walk. Eight to thirty feet is the range where a read earns its keep. Inside four feet you can usually see the break with your eyes, and the phone is mostly in the way. Past forty feet you are often dealing with more than one slope, a tier, or a putt you should be lagging anyway. The app can still look, but do not expect one clean aim point to describe a putt that changes its mind halfway.</p>
+      <p>Know which end is the ball and which end is the hole before you start. It sounds obvious. People still scan from the hole back to the ball and then read the break backwards. Walk from the ball toward the hole, the way the ball will roll.</p>
+      <p>Wipe the lens. A thumbprint turns a flat green into a funhouse. Take the case off if it shadows the camera or the LiDAR window. The LiDAR window is the black dot near the cameras on the back of a Pro iPhone, not the flash.</p>
+      <p>You do not need a tripod, a stake, or a marked ball. You need enough light to see the green yourself. If you cannot see the hole clearly, the phone cannot either.</p>
+
+      <h2 id="walk">Walking the putt</h2>
+      <p>Start at the ball with the hole in the picture. Move forward along the line at a walking pace, phone pointed down at the grass, not at the horizon. The scanner needs to see the ground. A pretty photo of the flag against the sky is the wrong picture.</p>
+      <p>Cover the ground the ball will cross, plus a little to either side. Break lives in the slope beside the straight line, not only under the string. If you only scan a six-inch ribbon, you will miss the tilt that actually moves the ball.</p>
+      <p>Do not rush the ends. The ball and the hole are the two points the line has to join. Hover a moment at each. Then stop. Extra loops around the green do not make a truer putt, and they do make a muddled surface.</p>
+      <p>If someone walks through the putt while you are scanning, start over. A caddie, a mower, or your own shadow parked on the line will get built into the ground.</p>
+
+      <h2 id="markers">Ball and hole</h2>
+      <p>The app needs to know where the ball is and where the hole is. You show it. There is no requirement to use a particular brand of ball, a striped ball, or a ball with a sensor in it. A coin or a tee can stand in for the ball on the practice green if you are not putting a real one.</p>
+      <p>The hole is the hole. If you are practicing to a tee or a chalk mark instead of a cup, mark that point as the hole and remember you are practicing to a spot, not to a cup that can swallow a ball. Pace suggestions that say “die it in the hole” assume a cup. A tee in the ground will not take the ball.</p>
+      <p>Do not move the ball after you have marked it and then keep the old read. The line is between those two points. Move either one and the putt is a different putt.</p>
+
+      <h2 id="sensors">LiDAR and the camera</h2>
+      <p>LiDAR, on the Pro phones listed above, measures distance with light pulses and gives ARKit a surface to reconstruct. That is the better tool for a green, because a green is a shallow shape. A one-percent slope over ten feet is a little over an inch of fall. Eyes miss that. A camera can miss it too, or invent it from a mower stripe and a shadow.</p>
+      <p>The camera path exists so a non-Pro iPhone is not a brick. It still draws a line. It is more sensitive to light, contrast, and how steadily you walked. If you have both kinds of phone and they disagree, believe the LiDAR read first, then your feet, then the camera. If LiDAR and your feet disagree, scan once more before you talk yourself into the phone. A second scan that matches the first is worth more than the first scan alone.</p>
+      <p>The app is supposed to label which sensor produced the read. If you cannot tell, treat the read as the weaker one. We do not want a camera guess wearing a LiDAR coat.</p>
+
+      <h2 id="line">The line</h2>
+      <p>The line is a path from the ball to the hole over the surface the phone built. On a flat green it is nearly straight. On a slope it bows. The bow is the break.</p>
+      <p>Read the bow from the ball’s point of view, the way you will stand. “Breaks right” means the ball will move to your right as it rolls away from you, and you start it to the left to allow for that. “Breaks left” is the mirror. If you are standing at the hole looking back at the ball, left and right swap. That is the most common way to talk yourself out of a correct read. Turn around. Look from the ball.</p>
+      <p>A line that kinks hard in the middle usually means the green does, or the scan jumped. A tier, a repaired pitch mark, or a seam between two passes of the mower can be real. A kink that appears and disappears when you scan again was the scan.</p>
+
+      <h2 id="aim">The aim point</h2>
+      <p>The aim point is not the hole. It is where you want the ball to start. On a right-breaking putt it sits left of the hole. You pick a blade, a discolored patch, or an old ball mark near that point and roll the ball over it. The break is then supposed to bring the ball back to the cup.</p>
+      <p>How far outside is the whole question. Figure 1 on the <a href="../home/">home page</a> is the picture: ball at the bottom, aim point off to the side of the curve, hole at the end. If the app says eight inches right on a fourteen-footer, the aim point is about a cup to the left, not eight inches past the hole on the right. People mix those up when they are nervous. The label on the read is “aim,” and it is on the start of the putt, not beside the cup on the high side.</p>
+      <p>Uphill putts break less than the same slope downhill, because the ball slows sooner. Downhill putts take more line and less pace. If the app’s aim point and your eyes are in a fight on a downhill slider, give the extra line a serious look before you talk yourself into the hole.</p>
+
+      <h2 id="contours">Contours</h2>
+      <p>The bands on the green are slope lines, kin to the rings on the icon. Closer bands mean the slope is changing faster. A wide quiet middle means the putt is flatter there. They are an overlay so you can see the shape that produced the line. They are not a substitute for the line. If the bands and the line tell two stories, scan again. One of them is confused, and it might be both.</p>
+      <p>Do not try to putt the bands. Putt the aim point.</p>
+
+      <h2 id="pace">Pace and stimp</h2>
+      <p>Stimp is how far a ball rolls on a flat green when it is released from the standard ramp. A slow public green might be an 8. A decent club green is often around 9 to 11. A fast tournament green can be 12 or 13, sometimes more. You enter the number. The phone cannot smell the green speed off a picture.</p>
+      <p>If you do not know, do not type 11 because it sounds professional. Use 9 for an ordinary park or municipal green unless the surface is obviously quick, and use 10 or 11 for a private club green that feels slick under your feet. Then call the pace a model. If the superintendent has a number posted, use that.</p>
+          <p>Pace in the app is a suggestion tied to that number and to the slope. “Die it in the hole” means the ball arrives with just enough speed to fall, if the line is right. That is a sound pace on a flat putt and on most downhill putts, where anything firm will run. Uphill, a ball that is dying at the hole often dies short of it, so a firmer roll is the usual fix. Read the words on the screen. Firm means the ball should still be moving when it gets there. Die means it should be nearly done.</p>
+      <p>A one-stimp error is enough to change a ten-footer. If your putts keep coming up short and the line is good, the stimp you entered is probably too fast, or you are quitting on the stroke. The phone cannot see a quit. It can only do the arithmetic you handed it.</p>
+      <p>Grain, the way the grass grows, is not the same thing as slope. Into the grain is slower. Down-grain is quicker. Bermudagrass in the afternoon can have more grain than slope. The scan sees shape. It does not see which way the blades lean. On grainy grass, treat pace as a hint and watch a couple of putts before you trust it.</p>
+
+      <h2 id="model">What “model” means</h2>
+      <p>Some numbers are measurements. A stimp you rolled with a stimpmeter is a measurement. A length you taped is a measurement. The slope from a finished LiDAR scan is a measurement of the surface the phone built, which is close to the green and not the same thing as a survey.</p>
+      <p>A model is what the app computes from those inputs: the curve, the aim point, the suggested pace. It is a physics sketch of a golf ball on a tilted plane, with the stimp standing in for how fast the grass is. Balls are not perfect, greens are not glass, and you do not strike the ball in the center every time. The model does not know your miss.</p>
+      <p>When the app marks a figure as a model, that is the honest label. Do not scrape the word off in your head and call it a measurement. The home page example, fourteen feet and eight inches, is a model in exactly this sense. It is there so the shape of an answer is familiar. It is not a read of a green you are standing on.</p>
+
+      <h2 id="conditions">Light, weather, and the grass</h2>
+      <p>Bright overcast is a gift. You can see the surface and so can the cameras. A low sun behind the hole will flare the lens and punch holes in a camera read. Turn so the sun is off the glass, or wait. Heavy shade under trees is dim, and a camera read gets noisy there. LiDAR cares less about the sun and still needs a view of the grass.</p>
+      <p>Dew makes a green slower than yesterday’s stimp. Rain on the surface does the same, until the green firms up. If you scanned yesterday’s number into today’s wet green, the pace will be too firm and the ball will die early. Change the stimp or ignore the pace and keep the line.</p>
+      <p>Wind does not move a rolling ball as much as people think, until it does, on a slick downhill putt. The app ignores wind. You should not, on those putts.</p>
+      <p>A recently topdressed or punched green will scan lumpy because it is lumpy. The line may chatter. That is the green. Practice your lag and come back when it has healed. Do not demand a tour read off a green that is full of sand.</p>
+
+      <h2 id="bad">When the read looks like junk</h2>
+      <p>Scan again before you edit your swing around a wild line. Most bad reads are one of these:</p>
+      <ul>
+        <li>You walked too fast, or you pointed the phone at the flag instead of the grass.</li>
+        <li>The lens is dirty, or a finger covered the LiDAR window.</li>
+        <li>Someone crossed the putt mid-scan.</li>
+        <li>You marked the hole and the ball the wrong way round.</li>
+        <li>You are reading left and right from the hole, not from the ball.</li>
+        <li>The stimp is a fantasy. A 13 typed onto a shaggy public green will tell you to barely touch a putt that needs a firm stroke.</li>
+        <li>The green is in pieces: a tier, a bunker lip, a drain. One aim point cannot describe it. Break the putt into two looks, or putt it as a lag.</li>
+        <li>The phone is hot, in low-power mode, or the camera is in use by something else. Close the other app. Let the phone cool off in the shade. A hot phone throttles the sensors.</li>
+      </ul>
+      <p>Two scans that agree are a read. Two scans that disagree are a question. Take a third. If the third matches one of them, use that. If all three disagree, put the phone away and putt with your eyes. The green did not fail. The scan did.</p>
+
+      <h2 id="history">Practice history</h2>
+      <p>You can keep a putt and look at it again. That is for the twelve-footer you want to see twice, not for a diary of every three-footer. The history lives with the app, on the phone. This website does not have your putts. See the <a href="../privacy-policy/">privacy policy</a> for what stays on the device.</p>
+      <p>A saved putt is the read you stored, not a promise the green still falls that way tomorrow. Dew, a mower, and a new hole location all change it. If the cup moved, the old read is a different putt. Scan the new one.</p>
+
+      <h2 id="juniors">Juniors</h2>
+      <p>A junior can use a parent’s phone on the practice green. There is no account, no nickname, and no photo of the kid. Hand over the phone, let them walk the putt, then take the phone back. The value for a junior is seeing that break is a shape, not a guess you apologize for. The risk is believing the phone so hard they stop looking. Make them call the break out loud before they turn the screen around.</p>
+
+      <h2 id="rules">Competition</h2>
+      <p>This is a practice tool. The Rules of Golf restrict what you may use during a round. A phone that measures slope and tells you a line is exactly the sort of thing a committee may prohibit, and many already do, under the rules on equipment and on advice. Local rules sometimes allow distance-measuring devices and still forbid measuring elevation. Read the notice, or ask the person who posted the draw.</p>
+      <p>We will not publish a “tournament mode” that pretends a measuring device is suddenly legal because we hid a button. If you are not sure, leave the phone in the bag.</p>
+
+      <h2 id="wont">What it will not do</h2>
+      <ul>
+        <li>It will not read a putt from a photograph you took last week.</li>
+        <li>It will not know the stimp unless you tell it, or unless a later version says, in the app and on this page, that it estimates stimp. It does not do that now.</li>
+        <li>It will not see grain.</li>
+        <li>It will not see wind.</li>
+        <li>It will not putt the ball, pick a club, or caddie a full hole.</li>
+        <li>It will not turn a bad stroke into a good one. A perfect line with a shoved putt still misses.</li>
+        <li>It will not replace looking at the putt from both sides, which still works and does not need a battery.</li>
+      </ul>
+
+      <h2 id="care">The phone itself</h2>
+      <p>A long practice session in the sun will warm the phone. Heat makes phones dim the screen and slow the sensors. Shade it between putts. Do not leave it face up on the dash of the cart.</p>
+      <p>Low Power Mode can limit the camera and ARKit. Turn it off while you practice, then turn it back on. Background location apps are not required for a read of the grass in front of you. If the phone asks for camera access, it needs that to see the green. If it asks for something that has nothing to do with the camera or motion sensors, deny it and check this page. We will list the permissions here when the app ships. Anything beyond that list is a reason to hesitate.</p>
+      <p>Update iOS when you can. ARKit changes with the system. An ancient iOS and a new app are a bad pair, and the App Store will usually refuse the install before you have to debug it.</p>
+
+      <h2 id="site">This website</h2>
+      <p>The site is three pages: <a href="../home/">home</a>, this one, and the <a href="../privacy-policy/">privacy policy</a>. There is no login, no practice-putt cloud, and no mailing list. Nothing you type here is stored, because there is nowhere to type. If a link fails, reload. If the App Store button only tells you the listing is not up, that is the current truth, not a broken link.</p>
+
+      <h2 id="write">Writing to us</h2>
+      <p data-contact>We have not published a support address on this website. When the App Store listing is up, use the support link Apple shows there. Until then, the answers we have are the ones on this page.</p>
+      <p>If you write later, say which iPhone you have, whether the read was LiDAR or camera, what the stimp was set to, and what the green did versus what the line said. “It was wrong” is hard to fix. “14 feet, stimp 10, LiDAR, it broke left and the app said right, twice” is a bug report.</p>
+    </article>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-row">
+        <p>© <span id="year">2026</span> Puttriot. Made in the U.S.A.</p>
+        <ul class="foot-links">
+          <li><a href="../home/">Home</a></li>
+          <li><a href="../support/" aria-current="page">Support</a></li>
+          <li><a href="../privacy-policy/">Privacy policy</a></li>
+          <li><a data-store-link href="#">App Store</a></li>
+        </ul>
+      </div>
+      <p class="fine">A practice aid. Look at the putt yourself before you hit it.</p>
+    </div>
+  </footer>
+  <div class="toast" role="status" aria-live="polite" hidden></div>
+  <script src="../js/config.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

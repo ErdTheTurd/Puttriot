@@ -2,10 +2,10 @@
   "name": "Puttriot",
   "short_name": "Puttriot",
   "description": "An iPhone practice tool that reads putting greens and shows the break.",
-  "start_url": ".",
+  "start_url": "home/",
   "display": "standalone",
-  "background_color": "#B4D15E",
-  "theme_color": "#B4D15E",
+  "background_color": "#f3efe4",
+  "theme_color": "#f3efe4",
   "icons": [
     {
       "src": "assets/icon-192.png",
