@@ -1,6 +1,6 @@
 # Puttriot
 
-Website for Puttriot, an iPhone and iPad app that reads putting greens with LiDAR. The app is in App Review and is not on the App Store yet. The app itself is not in this repo.
+Website for Puttriot, an iPhone and iPad app that reads putting greens with LiDAR. The app is not on the App Store yet. The app itself is not in this repo.
 
 | Page | URL |
 | --- | --- |
