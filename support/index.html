@@ -32,8 +32,7 @@
             <li><a href="../privacy-policy/">Privacy</a></li>
           </ul>
         </nav>
-        <!-- TODO: App Store listing https://apps.apple.com/app/id6821444727 -->
-        <a class="store" data-store-link href="#app-store-todo">Coming soon to the App Store</a>
+        <p class="store">Coming soon to the App Store</p>
       </div>
     </div>
   </header>
@@ -77,10 +76,9 @@
       </nav>
       <article class="help-body">
         <h2 id="not-out">Not on the App Store yet</h2>
-        <p>Puttriot is in App Review. There is no public listing to install today. The button says “Coming soon to the App Store” and stays on this website until the listing is live.</p>
+        <p>Puttriot is in App Review. There is no public listing to install today. The site shows “Coming soon to the App Store” as a label, not a link.</p>
         <p>This page is the manual, written so the behavior is described before you are standing on a green with a tee time. If a shipped version disagrees with a sentence here, the app in your hand is the thing to trust and this page gets corrected. We would rather fix a sentence than leave you with a confident wrong one.</p>
-        <!-- TODO: App Store listing https://apps.apple.com/app/id6821444727 -->
-        <a class="store" data-store-link href="#app-store-todo">Coming soon to the App Store</a>
+        <p class="store">Coming soon to the App Store</p>
 
         <h2 id="devices">Which device you need</h2>
         <p>Puttriot runs on iPhone and iPad. A live read — scanning a real green and drawing the line — is a different thing from the demo green and the speed tools. Only LiDAR devices do the live read.</p>
@@ -223,11 +221,10 @@
         <p>If the device asks for your contacts, your photo library, the microphone, or Bluetooth, deny it and check this page. Those are not used. Update iOS when you can. ARKit changes with the system. An ancient iOS and a new app are a bad pair, and the App Store will usually refuse the install before you have to debug it.</p>
 
         <h2 id="site">This website</h2>
-        <p>The site is three pages: <a href="../home/">home</a>, this one, and the <a href="../privacy-policy/">privacy policy</a>. There is no login, no practice-putt cloud, and no mailing list. Nothing you type here is stored, because there is nowhere to type. If a link fails, reload. If the App Store button only tells you the listing is not up, that is the current truth, not a broken link.</p>
+        <p>The site is three pages: <a href="../home/">home</a>, this one, and the <a href="../privacy-policy/">privacy policy</a>. There is no login, no practice-putt cloud, and no mailing list. Nothing you type here is stored, because there is nowhere to type. If a link fails, reload. “Coming soon to the App Store” is a label. It is not a link.</p>
 
         <h2 id="write">Writing to us</h2>
-        <!-- TODO: set CONTACT_EMAIL in js/config.js. TODO_EMAIL is not a real inbox. -->
-        <p>Email <span data-contact><strong class="todo-mail">TODO_EMAIL</strong> <span class="todo-tag">Placeholder — not a working address</span></span>. Do not send mail to that placeholder. When a real address is set in the site config, this spot becomes a mailto link.</p>
+        <p>Email <a href="mailto:erdunn%2Bgreenreader@mail.grokbot.com">erdunn+greenreader@mail.grokbot.com</a>.</p>
         <p>If you write later, say which device you have, whether it was a live read or the demo green, what speed was set, and what the ball did versus the line. “It was wrong” is hard to fix. “iPhone 13 Pro, live read, slow public-green preset, the ball broke left and the line said right, twice” is a bug report.</p>
       </article>
     </div>
@@ -241,17 +238,13 @@
           <li><a href="../home/">Home</a></li>
           <li><a href="../support/" aria-current="page">Support</a></li>
           <li><a href="../privacy-policy/">Privacy</a></li>
-          <!-- TODO: App Store listing https://apps.apple.com/app/id6821444727 -->
-          <li><a data-store-link href="#app-store-todo">Coming soon to the App Store</a></li>
+          <li><span class="soon-label">Coming soon to the App Store</span></li>
         </ul>
       </div>
-      <!-- TODO: set CONTACT_EMAIL in js/config.js. TODO_EMAIL is not a real inbox. -->
-      <p class="fine">Contact <span data-contact><strong class="todo-mail">TODO_EMAIL</strong> <span class="todo-tag">Placeholder — not a working address</span></span></p>
+      <p class="fine">Contact <a href="mailto:erdunn%2Bgreenreader@mail.grokbot.com">erdunn+greenreader@mail.grokbot.com</a></p>
       <p class="fine">Look at the putt yourself before you hit it.</p>
     </div>
   </footer>
-  <div class="toast" role="status" aria-live="polite" hidden></div>
-  <script src="../js/config.js"></script>
   <script src="../js/main.js"></script>
 </body>
 </html>

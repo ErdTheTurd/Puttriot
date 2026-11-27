@@ -39,8 +39,7 @@
             <li><a href="../privacy-policy/">Privacy</a></li>
           </ul>
         </nav>
-        <!-- TODO: App Store listing https://apps.apple.com/app/id6821444727 -->
-        <a class="store" data-store-link href="#app-store-todo">Coming soon to the App Store</a>
+        <p class="store">Coming soon to the App Store</p>
       </div>
     </div>
   </header>
@@ -53,7 +52,6 @@
           <nav class="contents" aria-label="On this page">
             <a href="#devices">Devices</a>
             <a href="#walk">The walk</a>
-            <a href="#plates">Screens</a>
             <a href="#speed">Speed</a>
             <a href="#maker">The mark</a>
           </nav>
@@ -62,10 +60,9 @@
           <p class="hardware"><b>Live reads</b> need a LiDAR iPhone Pro, from the 12 Pro on, or a LiDAR iPad Pro. Other iPhones and iPads get the demo green and the speed tools. They do not scan a real green.</p>
           <p class="by">Built in El Paso by Edward Dunn, a junior who plays the U.S. Kids Golf El Paso Local Tour with his brother.</p>
           <div class="open-actions">
-            <!-- TODO: App Store listing https://apps.apple.com/app/id6821444727 -->
-            <a class="store store--lg" data-store-link href="#app-store-todo">Coming soon to the App Store</a>
+            <p class="store store--lg">Coming soon to the App Store</p>
           </div>
-          <p class="soon">Not on the App Store yet. The button stays on this page until the listing is live.</p>
+          <p class="soon">Not on the App Store yet. This is a label, not a link.</p>
         </div>
 
         <figure class="plan">
@@ -244,47 +241,6 @@
       </div>
     </section>
 
-    <section class="chapter" id="plates" aria-labelledby="plates-title">
-      <div class="wrap">
-        <div class="chapter-head">
-          <p class="plate-id">Plates · From the app</p>
-          <h2 id="plates-title">Screens, when we have them.</h2>
-          <p>These frames are empty on purpose. The repo has no real captures. Nothing here is a drawn fake of the interface.</p>
-        </div>
-        <div class="plate-grid">
-          <figure class="mount mount--read">
-            <!-- TODO: set src="../assets/screenshots/read.png" to a real capture of the putt line and aim point on a green. Do not substitute a mockup. -->
-            <div class="mount-frame">
-              <span class="corners" aria-hidden="true"></span>
-              <img alt="Screenshot not placed yet. It will show Puttriot on iPhone, with the putt line and aim point drawn on a scanned green." width="390" height="844">
-              <p class="mount-pending">Screenshot<br>not placed yet</p>
-            </div>
-            <figcaption>Fig. 1 · The read. Line and aim point on the green.</figcaption>
-          </figure>
-          <div class="mount-stack">
-            <figure class="mount mount--find">
-              <!-- TODO: set src="../assets/screenshots/find-hole.png" to a real capture of the Find hole step after the walk. Do not substitute a mockup. -->
-              <div class="mount-frame">
-                <span class="corners" aria-hidden="true"></span>
-                <img alt="Screenshot not placed yet. It will show the Find hole step, phone pointed at the ground near the cup." width="390" height="844">
-                <p class="mount-pending">Screenshot<br>not placed yet</p>
-              </div>
-              <figcaption>Fig. 2 · Find hole, after the walk.</figcaption>
-            </figure>
-            <figure class="mount mount--speed">
-              <!-- TODO: set src="../assets/screenshots/speed.png" to a real capture of green-speed presets and the WeatherKit adjustment. Do not substitute a mockup. -->
-              <div class="mount-frame">
-                <span class="corners" aria-hidden="true"></span>
-                <img alt="Screenshot not placed yet. It will show Puttriot green-speed presets and the weather-adjusted speed." width="844" height="390">
-                <p class="mount-pending">Screenshot<br>not placed yet</p>
-              </div>
-              <figcaption>Fig. 3 · Green speed. Presets, and the weather adjustment.</figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="chapter" id="speed" aria-labelledby="speed-title">
       <div class="wrap speed-grid">
         <div class="speed-copy">
@@ -335,18 +291,14 @@
           <li><a href="../home/" aria-current="page">Home</a></li>
           <li><a href="../support/">Support</a></li>
           <li><a href="../privacy-policy/">Privacy</a></li>
-          <!-- TODO: App Store listing https://apps.apple.com/app/id6821444727 -->
-          <li><a data-store-link href="#app-store-todo">Coming soon to the App Store</a></li>
+          <li><span class="soon-label">Coming soon to the App Store</span></li>
         </ul>
       </div>
-      <!-- TODO: set CONTACT_EMAIL in js/config.js. TODO_EMAIL is not a real inbox. -->
-      <p class="fine">Contact <span data-contact><strong class="todo-mail">TODO_EMAIL</strong> <span class="todo-tag">Placeholder — not a working address</span></span></p>
+      <p class="fine">Contact <a href="mailto:erdunn%2Bgreenreader@mail.grokbot.com">erdunn+greenreader@mail.grokbot.com</a></p>
       <p class="fine">Look at the putt yourself before you hit it.</p>
     </div>
   </footer>
 
-  <div class="toast" role="status" aria-live="polite" hidden></div>
-  <script src="../js/config.js"></script>
   <script src="../js/main.js"></script>
 </body>
 </html>

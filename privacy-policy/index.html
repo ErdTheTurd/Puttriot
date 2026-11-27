@@ -32,8 +32,7 @@
             <li><a href="../privacy-policy/" aria-current="page">Privacy</a></li>
           </ul>
         </nav>
-        <!-- TODO: App Store listing https://apps.apple.com/app/id6821444727 -->
-        <a class="store" data-store-link href="#app-store-todo">Coming soon to the App Store</a>
+        <p class="store">Coming soon to the App Store</p>
       </div>
     </div>
   </header>
@@ -96,7 +95,7 @@
 
         <h2 id="site">This website</h2>
         <p>The site is a set of static pages: <a href="../home/">home</a>, <a href="../support/">support</a>, and this policy. Your browser downloads HTML, CSS, pictures, and fonts. That is the whole transaction.</p>
-        <p>There is no comment box, no email signup, and no place to upload a scan. The App Store button does not send us a click log of its own. While the listing is not up, the button says the app is coming soon and does not leave this site. That note is drawn by the page. It is not a message you sent us.</p>
+        <p>There is no comment box, no email signup, and no place to upload a scan. The words “Coming soon to the App Store” are a label on the page. They are not a link, and clicking them sends nothing.</p>
         <p>Fonts on the page are files on this site, plus the serif your own device already has. The pages do not call an ad network or a social plugin to render type.</p>
 
         <h2 id="logs">Server logs</h2>
@@ -139,7 +138,7 @@
         <h2 id="account">Accounts, payments, and messages</h2>
         <p>There is no Puttriot account. No password, no email login, no “sign in with Apple” required to see a read, open the demo green, or use the speed tools.</p>
         <p>Tour is an optional subscription: monthly, yearly, or lifetime. Apple sells it through the App Store. We do not see your card number. Apple’s privacy policy covers that payment. We may see what Apple shares with a developer in the ordinary sales reports: counts, proceeds, and the country or region of the store, not a dossier on you. Buying Tour does not create a Puttriot account.</p>
-        <p>We do not send marketing email, because we do not collect email addresses on this site. We will not buy a list of golfers to mail. Mail you choose to send to a support address, once one is published, is mail you chose to write. We will use it to answer you, not to enroll you in a newsletter.</p>
+        <p>We do not send marketing email, because we do not collect email addresses on this site. We will not buy a list of golfers to mail. Mail you choose to send to <a href="mailto:erdunn%2Bgreenreader@mail.grokbot.com">erdunn+greenreader@mail.grokbot.com</a> is mail you chose to write. We will use it to answer you, not to enroll you in a newsletter.</p>
 
         <h2 id="children">Children and juniors</h2>
         <p>Puttriot is a practice tool a junior can use. It is not a social network, and it is not directed at collecting personal information from children under 13.</p>
@@ -175,7 +174,7 @@
           <li>Ignore the pace when you do not trust the speed. The line can still be worth a look. The <a href="../support/#model">support page</a> explains the difference between a measurement and a model.</li>
         </ul>
         <p>Because we do not have an account, there is no profile to download and no account to close. Access and deletion requests, in the formal sense, apply to information we actually hold. For this website, that is server logs held by the host, and only if a request can even be tied to a person. For the app as designed, the read is on your device, and the controls above are the deletion. The weather location is not in a Puttriot file.</p>
-        <p>State privacy laws in the United States, including laws that give residents a right to know, delete, or opt out of sale, still apply to us where they apply. We do not sell personal information, so an opt-out of sale has nothing to attach to. If you write to us once the contact address is a real inbox, we will answer in the time those laws require.</p>
+        <p>State privacy laws in the United States, including laws that give residents a right to know, delete, or opt out of sale, still apply to us where they apply. We do not sell personal information, so an opt-out of sale has nothing to attach to. If you write to the address in the last section, we will answer in the time those laws require.</p>
 
         <h2 id="security">Security</h2>
         <p>The website is static files served over HTTPS when the host is configured that way. Use the https address. There is no password database to breach, because there are no passwords.</p>
@@ -193,8 +192,7 @@
         <p>Continuing to use the website after a change means you are looking at the new page. For the app, a change that collects something new will be shown in the app before that collection starts, not only here.</p>
 
         <h2 id="contact">Contact</h2>
-        <!-- TODO: set CONTACT_EMAIL in js/config.js. TODO_EMAIL is not a real inbox. -->
-        <p>Privacy questions go to <span data-contact><strong class="todo-mail">TODO_EMAIL</strong> <span class="todo-tag">Placeholder — not a working address</span></span>. Please write “privacy” in the subject once that address is real. Until the placeholder is replaced, this page is the notice, and the address above is not an inbox.</p>
+        <p>Privacy questions go to <a href="mailto:erdunn%2Bgreenreader@mail.grokbot.com">erdunn+greenreader@mail.grokbot.com</a>. Please write “privacy” in the subject.</p>
       </article>
     </div>
   </main>
@@ -207,17 +205,13 @@
           <li><a href="../home/">Home</a></li>
           <li><a href="../support/">Support</a></li>
           <li><a href="../privacy-policy/" aria-current="page">Privacy</a></li>
-          <!-- TODO: App Store listing https://apps.apple.com/app/id6821444727 -->
-          <li><a data-store-link href="#app-store-todo">Coming soon to the App Store</a></li>
+          <li><span class="soon-label">Coming soon to the App Store</span></li>
         </ul>
       </div>
-      <!-- TODO: set CONTACT_EMAIL in js/config.js. TODO_EMAIL is not a real inbox. -->
-      <p class="fine">Contact <span data-contact><strong class="todo-mail">TODO_EMAIL</strong> <span class="todo-tag">Placeholder — not a working address</span></span></p>
+      <p class="fine">Contact <a href="mailto:erdunn%2Bgreenreader@mail.grokbot.com">erdunn+greenreader@mail.grokbot.com</a></p>
       <p class="fine">Look at the putt yourself before you hit it.</p>
     </div>
   </footer>
-  <div class="toast" role="status" aria-live="polite" hidden></div>
-  <script src="../js/config.js"></script>
   <script src="../js/main.js"></script>
 </body>
 </html>

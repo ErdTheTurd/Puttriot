@@ -1,51 +1,8 @@
 (function () {
-  var storeUrl = typeof APP_STORE_URL === "string" ? APP_STORE_URL.trim() : "#";
-  var contact = typeof CONTACT_EMAIL === "string" ? CONTACT_EMAIL.trim() : "";
   var mobileQuery = window.matchMedia("(max-width: 760px)");
   var nav = document.querySelector(".nav");
   var toggle = document.querySelector(".nav-toggle");
   var panel = document.getElementById("nav-panel");
-  var toast = document.querySelector(".toast");
-  var toastTimer = 0;
-
-  function isHttp(url) {
-    return /^https?:\/\//i.test(url);
-  }
-
-  function showToast(message) {
-    if (!toast) return;
-    toast.textContent = message;
-    toast.hidden = false;
-    window.clearTimeout(toastTimer);
-    toastTimer = window.setTimeout(function () {
-      toast.hidden = true;
-    }, 5000);
-  }
-
-  document.querySelectorAll("[data-store-link]").forEach(function (link) {
-    if (isHttp(storeUrl)) {
-      link.href = storeUrl;
-      link.target = "_blank";
-      link.rel = "noopener noreferrer";
-      return;
-    }
-    link.href = "#app-store-todo";
-    link.setAttribute("aria-label", "Coming soon to the App Store. Puttriot is in App Review and the listing is not up yet.");
-    link.addEventListener("click", function (event) {
-      event.preventDefault();
-      showToast("Puttriot is in App Review. It is not on the App Store yet.");
-    });
-  });
-
-  if (contact && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact)) {
-    document.querySelectorAll("[data-contact]").forEach(function (slot) {
-      var a = document.createElement("a");
-      a.href = "mailto:" + contact;
-      a.textContent = contact;
-      slot.textContent = "";
-      slot.appendChild(a);
-    });
-  }
 
   function syncPanel() {
     if (!panel || !nav) return;

@@ -37,41 +37,21 @@ Publish the repository root. Leave the build command empty. Do not deploy from a
 
 Links are relative, so a project site served from a subpath still works.
 
-## App Store link
+## App Store
 
-Every App Store link reads one value in `js/config.js`:
+The pages show “Coming soon to the App Store” as text. It is not a link. When the listing is public, the address is:
 
-```js
-const APP_STORE_URL = "#";
-```
+https://apps.apple.com/app/id6821444727
 
-The buttons say “Coming soon to the App Store” and stay on this site until that value is an `http` or `https` URL.
-
-When the listing is live, set it to the commented URL in that file:
-
-```js
-// const APP_STORE_URL = "https://apps.apple.com/app/id6821444727";
-```
+That address is also noted in `js/config.js`. The site does not load that file.
 
 ## Contact
 
-`CONTACT_EMAIL` is empty on purpose. The pages show `TODO_EMAIL` and label it as a placeholder, not a mailto link.
+Support and privacy mail is [erdunn+greenreader@mail.grokbot.com](mailto:erdunn%2Bgreenreader@mail.grokbot.com). Puttriot has no domain mailbox. The site is served from GitHub Pages.
 
-TODO: set `CONTACT_EMAIL` in `js/config.js` to a real inbox before you rely on this site as the App Store support or privacy contact.
+## Drawings
 
-## Screenshots
-
-The home page has three empty `<img>` slots (Fig. 1, Fig. 2, Fig. 3). The repo has no real captures.
-
-TODO: drop real screenshots in, set each `src`, and delete the TODO comment above that image. Do not draw a fake screen.
-
-Suggested paths:
-
-- `assets/screenshots/read.png` — the line and aim point on a green
-- `assets/screenshots/find-hole.png` — Find hole, after the walk
-- `assets/screenshots/speed.png` — green-speed presets and the weather adjustment
-
-The “Screenshot not placed yet” label hides once an `src` is set.
+The home page draws the green and the walk as inline SVG. The repo has no app screenshots.
 
 ## Type
 
