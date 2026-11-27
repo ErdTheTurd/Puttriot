@@ -3,30 +3,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Puttriot — the putt, drawn on the green</title>
-  <meta name="description" content="Puttriot maps a putting green with LiDAR and draws the putt line and aim point. Live reads need a LiDAR iPhone Pro or iPad Pro. Made in El Paso by Edward Dunn. In App Review.">
-  <meta name="theme-color" content="#f3eee4" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#101826" media="(prefers-color-scheme: dark)">
+  <title>Puttriot — read this green</title>
+  <meta name="description" content="Puttriot maps a putting green with LiDAR while you walk to the hole, then draws the line and aim point. Live reads need a LiDAR iPhone Pro or iPad Pro. In App Review.">
+  <meta name="theme-color" content="#f4efe4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e1712" media="(prefers-color-scheme: dark)">
   <meta property="og:title" content="Puttriot">
-  <meta property="og:description" content="LiDAR and ARKit on a real green. The line and the aim point, drawn. In App Review.">
+  <meta property="og:description" content="LiDAR maps the green as you walk. The line and the aim point are drawn on the grass.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="../assets/icon-512.png">
+  <meta property="og:image" content="../assets/screens/iphone-home.png">
   <link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
   <link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <link rel="manifest" href="../site.webmanifest">
-  <link rel="preload" href="../assets/fonts/barlow-condensed-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/fraunces-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/figtree-latin-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../css/styles.css">
   <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-
   <header class="nav">
     <div class="wrap nav-bar">
       <a class="brand" href="../home/">
-        <img src="../assets/icon.svg" width="36" height="36" alt="">
-        <span>Puttriot</span>
+        <img src="../assets/icon.svg" width="32" height="32" alt="">
+        Puttriot
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel">
         <span class="nav-toggle-label">Menu</span>
@@ -39,246 +39,109 @@
             <li><a href="../privacy-policy/">Privacy</a></li>
           </ul>
         </nav>
-        <p class="store">Coming soon to the App Store</p>
       </div>
     </div>
   </header>
 
   <main id="main" tabindex="-1">
-    <section class="opening" aria-labelledby="hero-title">
-      <div class="wrap open-grid">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
         <div>
-          <p class="plate-id">Plate 01 · El Paso · In App Review</p>
-          <nav class="contents" aria-label="On this page">
-            <a href="#devices">Devices</a>
-            <a href="#walk">The walk</a>
-            <a href="#speed">Speed</a>
-            <a href="#maker">The mark</a>
-          </nav>
-          <h1 id="hero-title">Read the slope.<br>Draw the putt.</h1>
-          <p class="lede">Puttriot uses LiDAR and ARKit to map a putting green, then draws the putt line and the aim point on the grass in front of you.</p>
-          <p class="hardware"><b>Live reads</b> need a LiDAR iPhone Pro, from the 12 Pro on, or a LiDAR iPad Pro. Other iPhones and iPads get the demo green and the speed tools. They do not scan a real green.</p>
-          <p class="by">Built in El Paso by Edward Dunn, a junior who plays the U.S. Kids Golf El Paso Local Tour with his brother.</p>
-          <div class="open-actions">
-            <p class="store store--lg">Coming soon to the App Store</p>
+          <p class="kicker">In App Review · El Paso</p>
+          <h1 id="hero-title">Read this green.</h1>
+          <p class="lede">Puttriot maps the surface with LiDAR while you walk slowly toward the hole, phone pointed at the ground.</p>
+          <p class="lede">It measures the slope. Break comes from that slope plus green speed: a stimp you pick, or one adjusted for today’s weather. Then it draws the line and the aim point on the grass.</p>
+          <div class="hero-actions">
+            <p class="stamp">Coming soon to the App Store</p>
           </div>
-          <p class="soon">Not on the App Store yet. This is a label, not a link.</p>
+          <p class="hardware">A live read needs a LiDAR iPhone Pro, 12 Pro or later, or an iPad Pro. Other iPhones and iPads get the demo green and the speed tools.</p>
+          <p class="hero-note">Built in El Paso by Edward Dunn, a junior who plays the U.S. Kids Golf El Paso Local Tour with his brother.</p>
         </div>
-
-        <figure class="plan">
-          <svg viewBox="0 0 690 470" aria-hidden="true" focusable="false">
-            <defs>
-              <clipPath id="green-clip">
-                <path d="M210 330 C150 292 128 190 198 122 C272 50 410 58 520 118 C630 178 652 262 594 332 C536 402 410 432 312 408 C250 392 270 368 210 330 Z"/>
-              </clipPath>
-              <marker id="fall" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
-                <path d="M0 0 L8 4 L0 8 Z" fill="var(--ink)"/>
-              </marker>
-              <path id="star" d="M0-5.2 L1.5-1.6 L5.4-1.6 L2.3.6 L3.4 4.4 L0 2.1 L-3.4 4.4 L-2.3.6 L-5.4-1.6 L-1.5-1.6 Z"/>
-            </defs>
-            <g transform="translate(168,36)">
-              <circle cx="0" cy="6" r="13" fill="none" stroke="var(--ink)" stroke-width="1.3"/>
-              <path d="M0 0 V-22" fill="none" stroke="var(--ink)" stroke-width="1.4"/>
-              <path d="M-4.2 -16 L0 -24 L4.2 -16 Z" fill="var(--ink)"/>
-              <text x="0" y="10" text-anchor="middle" fill="var(--ink)" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="12" font-weight="600">N</text>
-            </g>
-            <path fill="var(--turf-wash)" stroke="var(--ink)" stroke-width="1.7" d="M210 330 C150 292 128 190 198 122 C272 50 410 58 520 118 C630 178 652 262 594 332 C536 402 410 432 312 408 C250 392 270 368 210 330 Z"/>
-            <g clip-path="url(#green-clip)" fill="none" stroke="var(--turf)" stroke-linecap="round">
-              <path stroke-width="2.2" d="M70 150 C180 132 320 168 560 138"/>
-              <path stroke-width="1.5" d="M70 188 C190 168 340 206 580 176"/>
-              <path stroke-width="1.5" d="M80 228 C200 214 360 248 590 220"/>
-              <path stroke-width="2.2" d="M90 272 C210 256 380 292 580 266"/>
-              <path stroke-width="1.5" d="M110 318 C230 304 390 338 560 316"/>
-              <path stroke-width="1.5" d="M150 362 C250 352 380 376 500 362"/>
-            </g>
-            <path d="M300 210 V268" fill="none" stroke="var(--ink)" stroke-width="1.3" marker-end="url(#fall)"/>
-            <text x="308" y="246" fill="var(--muted)" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="14" letter-spacing="1.4">FALL</text>
-            <path d="M236 318 C300 286 380 240 460 206 C500 188 524 180 548 188" fill="none" stroke="var(--ink)" stroke-width="2.6" stroke-linecap="round"/>
-            <circle cx="236" cy="318" r="8" fill="var(--paper)" stroke="var(--ink)" stroke-width="1.6"/>
-            <circle cx="268" cy="268" r="11" fill="none" stroke="var(--red)" stroke-width="1.8"/>
-            <circle cx="268" cy="268" r="2.6" fill="var(--red)"/>
-            <ellipse cx="548" cy="188" rx="13" ry="9" fill="var(--hole)" stroke="var(--paper)" stroke-width="2"/>
-            <path d="M548 188 V96" stroke="var(--ink)" stroke-width="1.6"/>
-            <g transform="translate(552,64)">
-              <path fill="var(--flag-red)" d="M0 4 C28-2 52 12 80 4 C100 0 116 8 132 3 L132 18 C116 23 100 15 80 20 C52 28 28 14 0 20 Z"/>
-              <path fill="#f4efe6" d="M0 20 C28 14 52 28 80 20 C100 16 116 23 132 18 L132 34 C116 39 100 31 80 36 C52 44 28 30 0 36 Z"/>
-              <path fill="var(--flag-red)" d="M0 36 C28 30 52 44 80 36 C100 32 116 39 132 34 L132 50 C116 55 100 47 80 52 C52 60 28 46 0 52 Z"/>
-              <path fill="var(--flag-navy)" d="M0 4 C20 1 36 10 58 5 L58 40 C36 45 20 36 0 40 Z"/>
-              <g fill="#fff">
-                <use href="#star" transform="translate(12,14) scale(0.62)"/>
-                <use href="#star" transform="translate(28,14) scale(0.62)"/>
-                <use href="#star" transform="translate(44,14) scale(0.62)"/>
-                <use href="#star" transform="translate(20,24) scale(0.62)"/>
-                <use href="#star" transform="translate(36,24) scale(0.62)"/>
-                <use href="#star" transform="translate(12,34) scale(0.62)"/>
-                <use href="#star" transform="translate(28,34) scale(0.62)"/>
-                <use href="#star" transform="translate(44,34) scale(0.62)"/>
-              </g>
-            </g>
-            <g fill="var(--ink)" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="15" letter-spacing="1.5">
-              <text x="214" y="356" text-anchor="middle">BALL</text>
-              <text x="268" y="250" text-anchor="middle">AIM</text>
-              <text x="548" y="222" text-anchor="middle">HOLE</text>
-            </g>
-            <text x="470" y="448" fill="var(--muted)" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="14" letter-spacing="1.6">NOT TO SCALE</text>
-          </svg>
-          <figcaption>Fig. A · Plan of a green. Open contours, the putt, the aim point. Not a measured read.</figcaption>
-          <ul class="key">
-            <li><span class="swatch swatch--ring" aria-hidden="true"></span> Contour</li>
-            <li><span class="swatch swatch--line" aria-hidden="true"></span> Putt</li>
-            <li><span class="swatch swatch--aim" aria-hidden="true"></span> Aim point</li>
-          </ul>
+        <figure class="rig">
+          <div class="rig-bezel">
+            <div class="rig-screen">
+              <img src="../assets/screens/iphone-home.png" width="1206" height="2622" alt="Puttriot home screen on iPhone: Read a green, Try the demo green, and green speed set to 10.0 stimp, Medium.">
+            </div>
+          </div>
+          <figcaption>Home screen. The read starts at the ball.</figcaption>
         </figure>
       </div>
     </section>
 
-    <section class="chapter" id="devices" aria-labelledby="devices-title">
-      <div class="wrap">
-        <div class="chapter-head">
-          <p class="plate-id">Plate 02 · Devices</p>
-          <h2 id="devices-title">LiDAR, or it does not read the green.</h2>
-          <p>A live read is the walk on real grass. It needs the scanner. The demo green and the speed tools are the rest of the app, and they do not pretend to be a scan.</p>
+    <section class="field" id="walk" aria-labelledby="walk-title">
+      <div class="wrap split">
+        <div class="prose">
+          <p class="kicker">The walk</p>
+          <h2 id="walk-title">The phone stays on the ground.</h2>
+          <p>Set the ball. Walk slowly toward the hole. Point the phone at the grass, not at the flag. LiDAR and ARKit build the surface along that walk.</p>
+          <p>The slope is the measurement. Green speed is separate. It is stimp, the distance a ball rolls on a flat green. You choose a preset, or Apple WeatherKit adjusts it for the weather where you are. That forecast uses an approximate location, rounded to about 1 kilometer.</p>
+          <p>From the slope and that speed, Puttriot draws the line and the aim point on the green in front of you.</p>
+          <p class="attrib">Weather data provided by Apple Weather.</p>
+          <p><a href="../support/#walk">The longer version of the walk is on Support.</a></p>
         </div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th scope="col">Device</th>
-                <th scope="col">What you get</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>iPhone Pro with LiDAR, from the 12 Pro on, including Pro Max</td>
-                <td>Live read, demo green, and speed tools.</td>
-              </tr>
-              <tr>
-                <td>iPad Pro with LiDAR (2020 models and later)</td>
-                <td>Live read, demo green, and speed tools. A 2018 iPad Pro has no LiDAR, so it does not get the live read.</td>
-              </tr>
-              <tr>
-                <td>Other iPhones and iPads</td>
-                <td>Demo green and speed tools only. No live read. No camera scan of a real green.</td>
-              </tr>
-              <tr>
-                <td>Android</td>
-                <td>Not supported.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="aside">A 12 Pro is enough. It does not have to be this year’s phone. The long version, including what to do when a scan looks wrong, is on <a href="../support/#devices">Support</a>.</p>
-      </div>
-    </section>
-
-    <section class="chapter" id="walk" aria-labelledby="walk-title">
-      <div class="wrap">
-        <div class="chapter-head">
-          <p class="plate-id">Plate 03 · The walk</p>
-          <h2 id="walk-title">Set the ball. Walk to the hole.</h2>
-        </div>
-        <div class="walk-grid">
-          <div>
-            <ol class="walk">
-              <li>
-                <span class="num">01</span>
-                <div>
-                  <h3>Set the ball</h3>
-                  <p>The read starts there. A real ball, or a coin if you are only practicing the look.</p>
-                </div>
-              </li>
-              <li>
-                <span class="num">02</span>
-                <div>
-                  <h3>Walk slowly toward the hole</h3>
-                  <p>Point the phone at the ground, not at the flag. Cover the ground the ball will cross, and a little to either side.</p>
-                </div>
-              </li>
-              <li>
-                <span class="num">03</span>
-                <div>
-                  <h3>Tap Find hole</h3>
-                  <p>When you reach the cup, mark it. The line runs from the ball to that point.</p>
-                </div>
-              </li>
-              <li>
-                <span class="num">04</span>
-                <div>
-                  <h3>Take the line</h3>
-                  <p>Puttriot draws the putt and the aim point on the green. Look at the putt yourself before you hit it.</p>
-                </div>
-              </li>
-            </ol>
-            <p class="aside">That sequence is the live read. It needs LiDAR. Indoors, the demo green is the way to learn the screen. <a href="../support/#walk">How a walk goes wrong.</a></p>
+        <figure class="rig rig--pad">
+          <div class="rig-bezel">
+            <div class="rig-screen">
+              <img src="../assets/screens/ipad-home.png" width="1668" height="2420" alt="Puttriot home screen on iPad: the same Read a green control, demo green, and green speed at 10.0 stimp." loading="lazy">
+            </div>
           </div>
-          <figure class="gesture">
-            <svg viewBox="0 0 520 280" aria-hidden="true" focusable="false">
-              <path fill="var(--turf-wash)" d="M20 168 C90 162 150 150 210 156 C280 164 340 124 500 108 L500 250 L20 250 Z"/>
-              <path d="M20 168 C90 162 150 150 210 156 C280 164 340 124 500 108" fill="none" stroke="var(--turf)" stroke-width="2"/>
-              <path d="M48 158 C120 150 180 142 240 148 C310 156 370 118 470 104" fill="none" stroke="var(--ink)" stroke-width="1.4" stroke-dasharray="2 7"/>
-              <circle cx="48" cy="156" r="7" fill="var(--paper)" stroke="var(--ink)" stroke-width="1.5"/>
-              <g transform="translate(214,36) rotate(64)">
-                <rect width="48" height="86" rx="8" fill="var(--ink)"/>
-                <rect x="4" y="8" width="40" height="64" rx="3" fill="var(--paper)"/>
-                <path d="M10 58 C18 44 26 40 38 30" fill="none" stroke="var(--turf)" stroke-width="1.6" stroke-linecap="round"/>
-                <circle cx="14" cy="60" r="2.4" fill="var(--ink)"/>
-                <circle cx="34" cy="34" r="2.6" fill="var(--red)"/>
-                <rect x="16" y="74" width="16" height="3" rx="1" fill="var(--paper)"/>
-              </g>
-              <g transform="translate(468,78)">
-                <ellipse cx="0" cy="28" rx="8" ry="5" fill="var(--hole)"/>
-                <path d="M0 28 V0" stroke="var(--ink)" stroke-width="1.4"/>
-                <path fill="var(--flag-red)" d="M0 0 h22 l-3 6 3 6 H0 z"/>
-              </g>
-              <g fill="var(--ink)" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="14" letter-spacing="1.3">
-                <text x="48" y="184" text-anchor="middle">BALL</text>
-                <text x="250" y="28">PHONE AT THE GROUND</text>
-              </g>
-            </svg>
-            <figcaption>The walk. Phone pointed at the grass, ball behind you, hole ahead.</figcaption>
-          </figure>
-        </div>
+          <figcaption>The same app on iPad.</figcaption>
+        </figure>
       </div>
     </section>
 
-    <section class="chapter" id="speed" aria-labelledby="speed-title">
-      <div class="wrap speed-grid">
-        <div class="speed-copy">
-          <p class="plate-id">Plate 04 · Speed</p>
-          <h2 id="speed-title">A preset, then the weather.</h2>
-          <p>Stimp is the ramp test: how far a ball rolls on a flat green. Puttriot does not run that test. A scan of the slope is not a reading of the grass speed.</p>
-          <p>You pick a green-speed preset, or you type a number you trust. If the shop posts a stimp, use that. A fast number you typed because it sounded serious is how putts come up short.</p>
-          <p>Apple WeatherKit can nudge the speed for the weather. The app rounds your location to about 1 kilometer and asks Apple for the forecast. That is the only location use. It is not a map of your rounds.</p>
-          <p>You can ignore the nudge. If you turn location off, the preset you picked stays put.</p>
+    <section class="sand" id="speed" aria-labelledby="speed-title">
+      <div class="wrap split split--reverse">
+        <div class="prose">
+          <p class="kicker">Green speed</p>
+          <h2 id="speed-title">Stimp is not the slope.</h2>
+          <p>The screen in this picture is set to 10.0, Medium. Presets are Slow, Medium, Fast, and Tour. A slider runs from Shaggy to Augusta when you want a finer number.</p>
+          <p>“Check today’s weather” asks Apple WeatherKit to adjust that speed. It does not roll a stimpmeter. If the shop posts a number, use that. You can ignore the weather adjustment and keep the preset.</p>
           <p class="attrib">Weather data provided by Apple Weather.</p>
         </div>
-        <div class="margin-notes">
-          <section>
-            <h3>Demo green</h3>
-            <p>It works indoors, and on iPhones and iPads without LiDAR. A place to learn the screen. Not a scan of the room you are standing in.</p>
-          </section>
-          <section>
-            <h3>Duo cover</h3>
-            <p>On iPhone, the Duo cover display shows the read summary.</p>
-          </section>
-          <section>
-            <h3>Tour</h3>
-            <p>Optional. Monthly, yearly, or lifetime, sold by Apple. It unlocks extras. No Puttriot account. Prices and the extra list belong on the App Store listing, when that listing exists. They are not invented here.</p>
-          </section>
-        </div>
+        <figure class="rig">
+          <div class="rig-bezel">
+            <div class="rig-screen">
+              <img src="../assets/screens/iphone-speed.png" width="1206" height="2622" alt="Puttriot green speed screen: 10.0 stimp, Medium selected among Slow, Medium, Fast, and Tour, with Check today’s weather." loading="lazy">
+            </div>
+          </div>
+          <figcaption>Green speed. Presets, then the weather.</figcaption>
+        </figure>
       </div>
     </section>
 
-    <section class="colophon" id="maker" aria-labelledby="maker-title">
-      <div class="wrap colo-grid">
-        <img class="mark" src="../assets/icon.svg" width="120" height="120" alt="Puttriot icon: a waving star flag over green contour rings.">
-        <div>
-          <p class="plate-id">The mark</p>
-          <h2 id="maker-title">Putt and patriot.</h2>
-          <p>The icon is a 3-2-3 star flag, one gentle wave, over the contour rings of a green. American-made, in El Paso, Texas.</p>
-          <p>Edward Dunn built it. He is a junior, and he plays the U.S. Kids Golf El Paso Local Tour with his brother.</p>
-          <p>A practice aid. During a round, know the local rule on measuring devices. <a href="../support/#rules">Support</a> and the <a href="../privacy-policy/">privacy policy</a>.</p>
-        </div>
+    <section class="section" id="devices" aria-labelledby="devices-title">
+      <div class="wrap">
+        <p class="kicker">Devices</p>
+        <h2 id="devices-title">LiDAR, or no live read.</h2>
+        <dl class="spec">
+          <div>
+            <dt>iPhone Pro with LiDAR</dt>
+            <dd>12 Pro and later, including Pro Max. Live read, demo green, and speed tools.</dd>
+          </div>
+          <div>
+            <dt>iPad Pro with LiDAR</dt>
+            <dd>2020 models and later. Same live read. A 2018 iPad Pro has no scanner, so it does not get one.</dd>
+          </div>
+          <div>
+            <dt>Other iPhones and iPads</dt>
+            <dd>Demo green and speed tools. No live read, and no camera scan of a real green.</dd>
+          </div>
+          <div>
+            <dt>Android</dt>
+            <dd>Not supported.</dd>
+          </div>
+        </dl>
+        <p class="hero-note">Tour is optional: monthly, yearly, or lifetime, sold by Apple. There is no Puttriot account. Details of a bad read are on <a href="../support/">Support</a>.</p>
+      </div>
+    </section>
+
+    <section class="maker" aria-labelledby="maker-title">
+      <div class="wrap">
+        <p class="kicker">El Paso</p>
+        <h2 id="maker-title">Built by a junior, for practice.</h2>
+        <p>Edward Dunn made Puttriot in El Paso, Texas. He plays the U.S. Kids Golf El Paso Local Tour with his brother. The app is American-made.</p>
+        <p>It is a practice aid. During a round, know the local rule on measuring devices. <a href="../support/#rules">Support</a> and the <a href="../privacy-policy/">privacy policy</a>.</p>
       </div>
     </section>
   </main>
@@ -298,7 +161,6 @@
       <p class="fine">Look at the putt yourself before you hit it.</p>
     </div>
   </footer>
-
   <script src="../js/main.js"></script>
 </body>
 </html>
