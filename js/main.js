@@ -29,11 +29,11 @@
       link.rel = "noopener noreferrer";
       return;
     }
-    link.href = "#";
-    link.setAttribute("aria-label", "App Store, listing not up yet");
+    link.href = "#app-store-todo";
+    link.setAttribute("aria-label", "Coming soon to the App Store. Puttriot is in App Review and the listing is not up yet.");
     link.addEventListener("click", function (event) {
       event.preventDefault();
-      showToast("The App Store listing is not up yet. This link will go there when it is.");
+      showToast("Puttriot is in App Review. It is not on the App Store yet.");
     });
   });
 
@@ -43,9 +43,7 @@
       a.href = "mailto:" + contact;
       a.textContent = contact;
       slot.textContent = "";
-      slot.appendChild(document.createTextNode("Write to "));
       slot.appendChild(a);
-      slot.appendChild(document.createTextNode("."));
     });
   }
 
@@ -93,32 +91,6 @@
     syncPanel();
   }
 
-  function onScroll() {
-    if (!nav) return;
-    var overHero = document.querySelector(".hero");
-    var solid = window.scrollY > 10;
-    if (overHero) solid = window.scrollY > overHero.offsetHeight - 80;
-    nav.classList.toggle("is-solid", solid);
-  }
-  onScroll();
-  window.addEventListener("scroll", onScroll, { passive: true });
-
   var year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
-
-  var phone = document.querySelector(".phone");
-  if (phone) {
-    if (!("IntersectionObserver" in window) || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      phone.classList.add("is-in");
-    } else {
-      var observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (!entry.isIntersecting) return;
-          entry.target.classList.add("is-in");
-          observer.unobserve(entry.target);
-        });
-      }, { threshold: 0.35 });
-      observer.observe(phone);
-    }
-  }
 })();

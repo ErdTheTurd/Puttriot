@@ -2,15 +2,15 @@
  * Puttriot site config
  * --------------------
  * APP_STORE_URL
- * Every App Store link on the site reads this one value.
+ * Every App Store link reads this one value.
  * It is a placeholder until the listing is live.
  *
- * Swap "#" for the real URL, for example:
- *   "https://apps.apple.com/app/id1234567890"
+ * TODO: replace "#" with the live listing:
+ * const APP_STORE_URL = "https://apps.apple.com/app/id6821444727";
  *
  * CONTACT_EMAIL
- * Optional. Leave "" until there is a real address.
- * Support and the privacy policy will show a mailto link when this is set.
+ * TODO: set a real support address. Leave "" until then.
+ * The pages show TODO_EMAIL and do not turn it into a mailto link.
  */
 const APP_STORE_URL = "#";
 const CONTACT_EMAIL = "";
